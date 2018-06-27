@@ -42,26 +42,66 @@ body {
 }
 
 /* End browser reset */
+/* Fonts */
 
 h1 {
   font-family: "Lora", serif;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 2vw;
   letter-spacing: 1.5em;
   color: #ffffff;
 }
 
 h2 {
   position: relative;
-  bottom: -65%;
+  bottom: -10%;
   font-family: "Anton", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  font-size: 10em;
+  font-size: 10vw;
   color: #993300;
   text-shadow: #080702 1px 2px 8px;
 }
+
+h3 {
+  font-family: "Lora", serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2vw;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  font-size: 4em;
+  color: #ffffff;
+  margin: 0;
+}
+
+p {
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  font-size: vw;
+  color: #ffffff;
+}
+
+p.display-text {
+  font-size: 10vw;
+}
+
+p.standard-text {
+  text-transform: none;
+  font-size: 1.5vw;
+}
+
+hr {
+  margin: 1.75em 0;
+}
+
+/* Main Body */
 
 header {
   width: 100%;
@@ -79,8 +119,79 @@ section#one {
   background-size: cover;
 }
 
+#viewer {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 10%;
+  width: 90%;
+  height: 50%;
+  margin: auto;
+}
+
+.side-display {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(8, 7, 2, 0.8);
+  border-radius: 2em;
+  padding: 2em 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.primary-display {
+  width: 40%;
+  height: 100%;
+  background-color: rgba(8, 7, 2, 0.8);
+  border-radius: 2em;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+/* Footer */
+
 footer {
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
   height: 18%;
+  padding: 1em 4em;
   background-color: #080702;
+}
+
+.foot-print {
+  width: 6%;
+  text-align: center;
+}
+
+.foot {
+  width: 75%;
+  transition: 0.2s;
+}
+
+.foot:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  transform: scale(0.8, 0.8);
+}
+
+#answer-controls {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  padding: 1.25em;
+}
+
+.control {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  padding: 0.4em;
+  text-align: center;
+  background: #ff9933;
+}
+
+.control:hover {
+  cursor: pointer;
+  box-shadow: rgba(211, 153, 95, 0.8) 0px 0px 24px;
 }

@@ -16,18 +16,53 @@
         <header>
             <h1>godzilla</h1>
         </header>
+        <!-- Game displays -->
+        <div class="container" id="viewer">
+            <div class="side-display" id="timer">
+                <h3>timer</h3>
+                <p class="display-text">10</p>
+            </div>
+            <div class="primary-display" id="primary">
+                <h3>questions</h3>
+                <p class="standard-text">Godzilla once did battle with a massive creature that was a plant. What was the name of this unique foe of
+                    Godzilla's:
+                </p>
+                <hr>
+                <p class="answers">(A) Battra</p>
+                <p class="answers">(B) Megaguirus</p>
+                <p class="answers">(C) Biollante</p>
+            </div>
+            <div class="side-display" id="score">
+                <h3>points</h3>
+                <p class="display-text">100</p>
+            </div>
+        </div>
+        <!-- End game displays -->
         <h2>trivia challenge</h2>
     </section>
     <!-- End main body of game display -->
     <footer>
         <!-- "NEW GAME" button -->
         <div class="foot-print" id="new-game">
+            <img src="./build/images/new-game.png" class="foot" id="new">
+            <p>New Game</p>
         </div>
         <!-- Selection for answers A B or C -->
         <div id="answer-controls">
+            <div class="control">
+                <h4>a</h4>
+            </div>
+            <div class="control">
+                <h4>b</h4>
+            </div>
+            <div class="control">
+                <h4>c</h4>
+            </div>
         </div>
         <!-- "EXIT GAME" button -->
         <div class="foot-print" id="exit-game">
+            <img src="./build/images/exit-game.png" class="foot" id="exit">
+            <p>Exit Game</p>
         </div>
     </footer>
     <script src="./build/app.bundle.js"></script>
